@@ -1,25 +1,42 @@
-Amazon logo: $x{"//i class[@class="a-icon a-icon-logo"]"}
+# ----------------------------------------------------------Amazon logo: *done
 
-Email field: search by ID, "ap_email"
+$x("//i[@class='a-icon a-icon-logo']")
 
-Continue button: search by ID, "continue"
+# ---------------------------------------------------------Email field: *done
 
-Need help link: $x{"//i class[@class="a-expander-prompt"]"}
+search by ID, "ap_email" -
+$x("//input[@id='ap_email']")
 
-Forgot your password link: search by ID, "auth-fpp-link-button"
+# --------------------------------------------------------Continue button: *done
+search by ID, "continue"
+$x("//input[@id='continue']")
+
+# ----------------------------------------------------------Need help link: *done
+
+$x("//span[@class='a-expander-prompt']")
+
+# ------------------------------------------------------Forgot your password link: *done
+search by ID, "auth-fpp-link-button"
 -or-
-$x{"//class[@class="a-link-normal"]"}
+$x("//a[@id='auth-fpp-link-bottom']")
 
-Other issues with Sign-In link: search by ID, "app-other-signin-issues-link"
+# ------------------------------------------------------Other issues with Sign-In link: *done
+search by ID, "app-other-signin-issues-link"
 -or-
-$x{"//a[@href="/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8"]"}
+$x("//a[@id='ap-other-signin-issues-link']")
 
-Create your Amazon account button: search by ID, "createAccountSubmit"
+# ----------------------------------------------------Create your Amazon account button: *done
+search by ID, "createAccountSubmit"
 
-Conditions of use link: $x{"//a[@href="/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088"]"}
+$x("//a[@id='createAccountSubmit']")
 
-Can't do this way because "Privacy Notice Link"
-has the same class name of "a-link-normal"
-$x{"//class[@class="a-link-normal"]"}
 
-Privacy Notice link: $x{"//a[@href="/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496"]"}
+# --------------------------------------------------------Conditions of use link: *done
+search by class, "a-link-normal"
+
+$x("//a[contains(@href, '/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088')]")
+
+
+# ------------------------------------------------------------Privacy Notice link: *done
+
+$x("//a[contains(@href, '/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496')]")
