@@ -1,0 +1,25 @@
+Amazon logo: $x{"//i class[@class="a-icon a-icon-logo"]"}
+
+Email field: search by ID, "ap_email"
+
+Continue button: search by ID, "continue"
+
+Need help link: $x{"//i class[@class="a-expander-prompt"]"}
+
+Forgot your password link: search by ID, "auth-fpp-link-button"
+-or-
+$x{"//class[@class="a-link-normal"]"}
+
+Other issues with Sign-In link: search by ID, "app-other-signin-issues-link"
+-or-
+$x{"//a[@href="/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8"]"}
+
+Create your Amazon account button: search by ID, "createAccountSubmit"
+
+Conditions of use link: $x{"//a[@href="/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088"]"}
+
+Can't do this way because "Privacy Notice Link"
+has the same class name of "a-link-normal"
+$x{"//class[@class="a-link-normal"]"}
+
+Privacy Notice link: $x{"//a[@href="/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496"]"}
