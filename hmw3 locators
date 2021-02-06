@@ -1,0 +1,58 @@
+example guide:
+search by ID, "ap_email" -
+$x("//input[@id='ap_email']")
+$x("//span[@class='a-expander-prompt']")
+$x("//a[contains(@href, '/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496')]")
+
+#1 ----------------------------------------------------------Amazon logo: *done
+
+answer: $x("//i[@class='a-icon a-icon-logo']")
+
+help guide when hovering over logo
+i.a-icon a-icon-logo
+
+#2 ----------------------------------------------------------Create Account (text): *done
+
+$x("//h1[@class='a-spacing-small']")
+
+#3 ----------------------------------------------------------Your Name: * done
+
+$x("//input[@id='ap_customer_name']")
+
+#4 ----------------------------------------------------------Email: * done
+
+$x("//input[@id='ap_email']")
+
+#5 ----------------------------------------------------------Password: * done
+
+$x("//input[@id='ap_password']")
+
+
+#6 ----------------------------------------------------------Password must be at least 6 characters: * done
+
+$x("//div[@class='a-box a-alert-inline a-alert-inline-info auth-inlined-information-message a-spacing-top-mini']")
+
+
+#7 ----------------------------------------------------------Re-enter Password: * done
+
+$x("//input[@id='ap_password_check']")
+
+#8 ----------------------------------------------------------Create your Amazon Account button: * done
+
+$x("//input[@class='a-button-input']")
+
+
+#9 ----------------------------------------------------------Condition of Use: * done
+
+$x("//a[contains(@href, '/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&nodeId=508088')]")
+
+#10 ----------------------------------------------------------Privacy Notice: * done
+
+$x("//a[contains(@href, '/gp/help/customer/display.html/ref=ap_register_notification_privacy_notice?ie=UTF8&nodeId=468496')]")
+
+#11 ----------------------------------------------------------Already have an account? Sign-In: * done
+
+$x("//a[@class='a-link-emphasis']")
+
+
+

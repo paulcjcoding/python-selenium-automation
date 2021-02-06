@@ -34,6 +34,7 @@ $x("//a[@id='createAccountSubmit']")
 # --------------------------------------------------------Conditions of use link: *done
 search by class, "a-link-normal"
 
+
 $x("//a[contains(@href, '/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088')]")
 
 
