@@ -14,5 +14,3 @@ expected_text = 'Your Amazon Cart is empty'
 assert expected_text == actual_text, f'Expected {expected_text}, but got {actual_text}'
 
 driver.quit()
-
-

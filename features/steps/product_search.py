@@ -14,7 +14,7 @@ def open_google(context):
     context.driver.get('https://www.google.com/')
 
 
-@when('Input {search_word} into search field')
+@when('Input {search_word} into search field for Watches')
 def input_search(context, search_word):
     search = context.driver.find_element(*SEARCH_INPUT)
     search.clear()
