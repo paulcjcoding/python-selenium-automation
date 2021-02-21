@@ -17,13 +17,6 @@ assert expected_text == actual_text, f'Expected {expected_text}, but got {actual
 driver.quit()
 
 
-
-
-
-
-
-
-
 # from selenium import webdriver
 # from selenium.webdriver.common.by import By
 # from selenium.webdriver.common.keys import Keys

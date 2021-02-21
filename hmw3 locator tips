@@ -1,0 +1,4 @@
+
+#sample using $$
+
+$$("a[href*='ap_register_notification_condition_of_use']")

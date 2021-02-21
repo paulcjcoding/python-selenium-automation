@@ -8,19 +8,19 @@ RESULTS_FOUND_MESSAGE = (By.XPATH, "//div[@class='a-row sc-your-amazon-cart-is-e
 RESULTS = (By.XPATH, "//div[@class='g']")
 
 
-@given('Open Amazon page')
+@given('Open Amazon help page')
 def open_amazon(context):
     context.driver.get("https://www.amazon.com/")
 
 
-@when('Input {search_word} into search field')
+@when('Input the cancel order hit enter')
 def input_search(context, search_word):
     search = context.driver.find_element(By.XPATH, "//div[@class='a-row sc-your-amazon-cart-is-empty']/h2").text
     click()
     sleep(4)
 
 
-@then('Verify you can see Shopping Cart')
+@then('Verify you can see cancel order')
 def verify_url_contains_query(context):
     first_result = context.driver.find_element(*RESULTS).text
     print('\n{}'.format(first_result))
