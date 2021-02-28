@@ -1,0 +1,8 @@
+$$("div#zg_tabs li")
+$$("div#zg_tabs a")
+You can get rid of the div and write code like the below:
+$$("#zg_tabs li")
+$$("#zg_tabs a")
+Another way to do as XPATH
+$x("//*[@id='zg_tabs']")
+
