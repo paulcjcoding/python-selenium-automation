@@ -18,7 +18,7 @@ MOVERS_AND_SHAKERS = (By.XPATH, "//*[contains(@href='https://www.amazon.com/gp/m
 MOST_WISHED_FOR = (By.XPATH, "//*[contains(@href='https://www.amazon.com/gp/most-wished-for/ref=zg_bs_tab')]")
 GIFT_IDEAS = (By.XPATH, "//*[contains(@href='https://www.amazon.com/gp/most-gifted/ref=zg_bs_tab')]")
 
-"//*[@href='https://www.amazon.com/gp/feature.html?docId=1000625601']")
+# "//*[@href='https://www.amazon.com/gp/feature.html?docId=1000625601']")
 
 @given ('Open Amazon Best Sellers page')
 def open_amazon_bestseller_page(context):
